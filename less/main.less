@@ -1,0 +1,75 @@
+// Imports
+// -------------------------
+
+// Imports Assets
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import "../assets/bootstrap-3.2.0/less/bootstrap.less";
+@import "../assets/font-awesome-4.2.0/less/font-awesome.less";
+
+// Import Utilities
+@import "reset";
+@import "mixins";
+@import "social-colors";
+
+// Import Components
+@import "header";
+@import "footer";
+@import "types";
+@import "button";
+@import "input";
+@import "image";
+@import "breadcrumbs";
+@import "panel";
+@import "tooltip";
+@import "carousel";
+@import "modal";
+
+// Variables
+// -------------------------
+
+// Iconography
+@fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts";
+
+// Colors
+@black: #222;
+@white: #fff;
+@blue: #337ab7;
+@red: #d74d4d;
+@green: #bcc517;
+@brand-primary: @red;
+
+@text-color: #333;
+@body-bg: #fff;
+
+// Grid & Container
+@container-lg: @container-md;
+//@grid-gutter-width: 30px;
+
+//RWD
+@media-break: 480px;
+
+
+// Global
+// -------------------------
+
+section {
+	.container;
+}
+
+/* ---------------------------------------------- */
+/* ---------- TEMP STYLE : styleguide -----------*/
+/* -------------------------------------------- */
+
+h1.styleguide-title {
+	font-weight: 400;
+	font-size: 40px;
+	margin: 20px 0;
+	padding: 10px 0;
+	color: @brand-primary;
+	border-bottom: 2px solid @brand-primary;
+}
+.highlight {
+	color: @red;
+}
+
+

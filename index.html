@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Styleguide Starter Kit</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1100" />
+
+	<link rel="canonical" href="http://" />
+	<link rel="icon" type="image/png" href="im/logo/favicon.png" />
+	<link rel="apple-touch-icon" href="im/logo/appleicon.png" />
+		
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://" />
+
+	<link rel="stylesheet/less" type="text/css" href="less/main.less" />
+	<script src="assets/less-1.7.4/dist/less-1.7.4.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+	
+	<header>
+		<div class="skip-nav">
+			<ul>
+				<li><a href="#navigation">Aller au menu</a></li>
+				<li><a href="#content" accesskey="s">Aller au contenu</a></li>
+				<li><a href="#search" accesskey="4">Aller à la recherche</a></li>
+			</ul>
+		</div>
+
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars"></span>
+					</button>
+					<a class="navbar-brand" href="#"><i class="fa fa-flask"></i> Styleguide Starter Kit</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="nav navbar-nav">
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Link</a></li>
+						<li class="active"><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section>
+		<article>
+
+			<h1 class="styleguide-title">Typography (types.less)</h1>
+			
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+
+			<p class="intro"><span class="highlight">This is a paragraph with .intro class</span> : Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+
+			<p><span class="highlight">This is a simple paragraph</span> : Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+			<blockquote>
+				<p><span class="highlight">Blockquote</span> : Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+			</blockquote>
+
+			<ul>
+				<li>unordered list item</li>
+				<li>unordered list item</li>
+				<li>unordered list item</li>
+			</ul>
+
+			<ol>
+				<li>ordered list item 1</li>
+				<li>ordered list item 2</li>
+				<li>ordered list item 3</li>
+			</ol>
+
+			<h1 class="styleguide-title">Buttons (button.less)</h1>
+
+			<button type="button" class="btn btn-default">Default</button>
+			<button type="button" class="btn btn-success">Primary</button>
+			<button type="button" class="btn btn-info">Success</button>
+			<button type="button" class="btn btn-danger">Warning</button>
+
+			<br>
+
+			<button type="button" class="btn btn-default btn-double">Label on 2 lines</button>
+
+			<br>
+
+			<div class="btn-group">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+				Dropdown <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Separated link</a></li>
+				</ul>
+			</div>
+
+			<h1 class="styleguide-title">Form & Inputs (input.less)</h1>
+
+			<form>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Input Email Sample</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Placeholder : Enter email">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Input Password Sample</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Placeholder : Password">
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Input Group" aria-describedby="basic-addon2">
+						<span class="input-group-addon" id="basic-addon2"><i class="fa fa-flask"></i></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="checkbox" id="checkbox">
+					<label for="checkbox">Check me out</label>
+				</div>
+				<div class="form-group">
+					<div class="radio-inline">
+						<input type="radio" id="radio-1" name="radio" value="1" checked="checked">
+						<label for="radio-1">Check me out</label>
+					</div>
+					<div class="radio-inline">
+						<input type="radio" id="radio-2" name="radio" value="2">
+						<label for="radio-2">Check me out</label>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+
+			<h1 class="styleguide-title">Images (image.less)</h1>
+
+			<figure>
+				<img src="http://placehold.it/250x250" alt="">
+				<figcaption>This this an image caption</figcaption>
+			</figure>
+
+			<figure>
+				<img src="http://placehold.it/250x250" alt="" class="img-circle">
+				<figcaption>This is another image caption</figcaption>
+			</figure>
+
+			<h1 class="styleguide-title">Breadcrumbs (breadcrumbs.less)</h1>
+
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Library</a></li>
+				<li class="active">Data</li>
+			</ol>
+
+			<h1 class="styleguide-title">Panel (panel.less)</h1>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Panel title</h3>
+				</div>
+				<div class="panel-body">
+					Panel content
+				</div>
+			</div>
+
+			<h1 class="styleguide-title">Tooltip (tooltip.less)</h1>
+
+			<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+			<h1 class="styleguide-title">Carousel (carousel.less)</h1>
+
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="http://placehold.it/700x350" alt="...">
+						<div class="carousel-caption">
+							Product 1
+						</div>
+					</div>
+					<div class="item">
+						<img src="http://placehold.it/700x350" alt="...">
+						<div class="carousel-caption">
+							Product 2
+						</div>
+					</div>
+					<div class="item">
+						<img src="http://placehold.it/700x350" alt="...">
+						<div class="carousel-caption">
+							Product 3
+						</div>
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left fa fa-angle-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right fa fa-angle-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+			<h1 class="styleguide-title">Modals (modal.less)</h1>
+
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+				Launch demo modal
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							This is a modal.
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-success">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</article>
+	</section>
+
+	<footer>
+		<p>This is a footer</p>
+	</footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="assets/bootstrap-3.2.0/dist/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	  var $buoop = {vs:{i:8,f:20,o:17,s:6},reminder:0};
+	  $buoop.ol = window.onload;
+	  window.onload=function(){
+		try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+		var e = document.createElement("script");
+		e.setAttribute("type", "text/javascript");
+		e.setAttribute("src", "//browser-update.org/update.js");
+		document.body.appendChild(e);
+	  }
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+// Typography
+// -------------------------
+
+@font-family-sans-serif:  "Lato", Helvetica, Arial, sans-serif;
+@headings-font-weight: 400;
+@font-size-base: 13px;
+@font-size-h1: 60px;
+@font-size-h2: 30px;
+@font-size-h3: 30px;
+@font-size-h4: 14px;
+
+// Default Transition
+a {
+	.transition(color);
+}
+
+// Headings
+h1,.h1 {
+	font-weight: @headings-font-weight;
+	font-size: @font-size-h1;
+	margin: 10px 0;
+	@media (max-width: @media-break) {
+		font-size: 30px;
+		line-height: 30px;
+		margin: 0 0 10px;
+	}
+}
+h2,.h2 {
+	margin: 10px 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-weight: @headings-font-weight;
+	font-size: @font-size-h2;
+	line-height: 30px;
+	@media (max-width: @media-break) {
+		font-size: 16px;
+		line-height: 16px;
+		margin: 0 0 15px;
+	}
+}
+h3,.h3 {
+	font-size: @font-size-h3;
+	font-weight: 300;
+}
+
+h4,.h4 {
+	font-size: @font-size-h4;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+// Line
+hr {
+	border-top-color: @black;
+}
+
+// Paragraphs
+p {
+	font-size: @font-size-base;
+	line-height: 18px;
+	font-weight: 300;
+	@media (max-width: @media-break) {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	&.intro {
+		font-size: 15px;
+		line-height: 20px;
+		font-weight: 400;
+	}
+}
+
+// Blockquote
+blockquote {
+	border-color: @brand-primary;
+}
+
+// Unordered List
+ul {
+	margin-left: 0;
+	list-style-type: disc;
+	> li {
+		color: @text-color;
+	}
+}
+
+// Ordered List
+ol {
+	margin-left: 0;
+	> li {
+		color: @red;
+	}
+}

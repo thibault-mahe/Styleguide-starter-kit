@@ -1,0 +1,60 @@
+// Header
+// --------------------------
+
+// Navbar - Header
+@navbar-height: 50px;
+@navbar-margin-bottom: 0;
+@navbar-border-radius: 0;
+@navbar-default-color: @white;
+@navbar-default-bg: @black;
+@navbar-default-link-color: @white;
+@navbar-default-link-hover-color: @brand-primary;
+@navbar-default-link-hover-bg: transparent;
+@navbar-default-link-active-color: @brand-primary;
+@navbar-default-link-active-bg: transparent;
+@navbar-padding-horizontal: 0;
+@navbar-default-toggle-color: @brand-primary;
+@navbar-default-toggle-hover-bg: transparent;
+@navbar-default-toggle-icon-bar-bg: transparent;
+@navbar-default-toggle-border-color: transparent;
+
+
+header {
+	.skip-nav { // hidden for accessibility
+		ul {
+			.container;
+			list-style: none;
+			margin-bottom: 0;
+			> li {
+				float: left;
+				padding-right: 15px;
+				> a {
+					color: #fff;
+					font-size: 11px;
+					display: none;
+				}
+			}
+		}
+	}
+	.navbar {
+		border: 0;
+		.navbar-toggle {
+			color: @white;
+			&:focus,
+			&:hover {
+				color: @brand-primary;
+			}
+		}
+		.navbar-brand {
+		}
+		.navbar-nav {
+			li {
+				a {
+					padding: 0 10px;
+					line-height: @navbar-height;
+				}
+			}
+
+		}
+	}
+}
