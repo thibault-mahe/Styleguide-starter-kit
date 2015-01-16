@@ -6,7 +6,7 @@ A starter kit with a front developpement environment set (Bootstrap, Less, Font 
 Custom the less components and build your complex system by copying and pasting the component logic.
 
 
-![alt text]()
+![alt text](http://tibomahe.com/codepen/styleguide-kit-overview.png)
 
 ## Assets
 
